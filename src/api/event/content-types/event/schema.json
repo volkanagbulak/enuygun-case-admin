@@ -4,7 +4,8 @@
   "info": {
     "singularName": "event",
     "pluralName": "events",
-    "displayName": "Event"
+    "displayName": "Event",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,11 +16,30 @@
       "type": "string"
     },
     "Media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Date": {
+      "type": "datetime"
+    },
+    "Location": {
+      "type": "string"
+    },
+    "Capacity": {
+      "type": "integer"
+    },
+    "Price": {
+      "type": "decimal"
+    },
+    "RegistrationDeadline": {
+      "type": "date"
     }
   }
 }
